@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navclass {
+  background-color: blueviolet;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.navclass h1 {
+  margin: 0;
+  font-size: 24px;
+}
+ 
+.listclass{
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display:flex;
+  gap: 20px;
+}
+
+.listclass li {
+  display: inline;
+}
+
+
+.listclass li:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.secclass{
+  display: contents;
+  text-align: left;
+  align-content: baseline;
+}
