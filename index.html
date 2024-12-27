@@ -4,33 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>customer journey mapping</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="javascript" href="script.js">
-</head>
+  {% load static %}  <!-- Load static files -->
+  <link rel="stylesheet" href="{% static 'indexstyle.css' %}">  <!-- Correctly link to CSS -->
+  <script src="{% static 'script.js' %}"></script>  <!-- Correctly link to JavaScript -->
+
+
 <!--nav bar-->
 <div>
   <nav class="navclass"><h1>customer journey mapping</h1>
   <ul class="listclass">
-    <li>HOME</li>
-    <li>LOGIN</li>
-    <li>QUIZ GAMEPLAY</li>
-    <li>SCOREBOARD</li>
-    <li>INSIGHTS</li>
-    <li>PROGRESS DASHBOARD</li>
-    <li>COMMUNITY & RESOURCES</li>
+    <li><a href="{% url 'index' %}">HOME</a></li>
+    <li><a href="{% url 'login' %}">LOGIN</a></li>
+    <li><a href="QUIZ GAMEPLAY">QUIZ GAMEPLAY</a></li>
+    <li><a href="SCOREBOARD">SCOREBOARD</a></li>
+    <li><a href="INSIGHTS" >INSIGHTS</a></li>
+    <li><a href="PROGRESS DASHBOARD">PROGRESS DASHBOARD</a></li>
+    <li><a href="COMMUNITY & RESOURCES">COMMUNITY & RESOURCES</a></li>
   </ul>
   </nav>
 </div>
+</head>
 <body>
-  <div class="secdiv"></div>
+  <div class="secdiv">
   <section class="secclass">
-    <p>What is Customer Journey Mapping?
-      Definition:
-       A tool used by businesses to visualize the customer's experience from start to finish.
-      Purpose: 
-      To gain insights into customer behavior, needs, and emotions at each stage of their interaction with the business.
+    <p>What is Customer Journey Mapping?</p>
+     <p><h1>Definition</h1>
+      Customer Journey Mapping (CJM) is a strategic tool that visually represents a customer’s experience as they interact with a business or service. It outlines the complete journey from the customer's perspective, starting from their initial contact and spanning all touchpoints to the desired outcome.
+
+      The map helps organizations understand the thoughts, emotions, and behaviors of customers throughout their journey.</p>
+     <p><h1>Purpose:</h1> 
+      The primary purpose of Customer Journey Mapping is to improve the overall customer experience by identifying and addressing pain points, enhancing positive interactions, and aligning internal processes with customer needs.
       </p>
   </section>
-</div>
+  </div>
+
+  
+  <div class="imgdiv">
+    <img src="{% static 'cjm.jpg' %}" alt="Customer Journey Mapping" class="imgclass">  <!-- Correct image path -->
+  </div>
+
+
+<footer class="footerclass">
+      <p>© 2023 Customer Journey Mapping. All rights reserved.</p>
+
+       <p>Team Members: Uvabalaji K, Thiyaneshwar B, Srivisnu S, Sujin Charles J</P>
+</footer>
 </body>
 </html>
